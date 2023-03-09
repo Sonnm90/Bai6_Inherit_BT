@@ -23,16 +23,21 @@ public class Point3D extends Point2D {
         this.setXY(x, y);
         this.z = z;
     }
-    public float[] getXYZ(){
-        float[] arr={getX(),getY(),getZ()};
+
+    public float[] getXYZ() {
+        float[] arr = {getX(), getY(), getZ()};
         return arr;
+    }
+
+    public Point2D move() {
+        return this;
     }
 
     @Override
     public String toString() {
         return "Point3D{" +
-                "x="+getX()+
-                "y="+getY()+
+                "x=" + getX() +
+                "y=" + getY() +
                 "z=" + z +
                 '}';
     }
